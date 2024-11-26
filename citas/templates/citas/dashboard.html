@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elija su centro de salud</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'citas/styleDash.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="perfil_header">
+      <div class="contain_logo_user">
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
+      <div class="contain_info">
+        <p class="name_log" id="nameDash"></p>
+        <p class="userid_log" id="idDash"></p>
+      </div>
+    </div>
+    <div class="exit">
+      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    </div>
+    <div class="container_title">
+      <h1 class="h1_title">ELIJA SU CENTRO MEDICO</h1>
+    </div>
+    <div class="container_checkbox">
+      <div class="grupo_ch">
+        <label for="check_lb">
+          <input
+            type="radio"
+            name="checK"
+            class="check_status"
+            value="MEDICENTER"
+          />MEDICENTER
+          <i class="fa-solid fa-hospital"></i>
+        </label>
+      </div>
+      <div class="grupo_ch">
+        <label for="check_lb">
+          <input
+            type="radio"
+            name="check"
+            class="check_status"
+            value="MEDIGROUP"
+          />MEDIGROUP
+          <i class="fa-solid fa-hospital"></i>
+        </label>
+      </div>
+      <div class="grupo_ch">
+        <label for="check_lb">
+          <input
+            type="radio"
+            name="check"
+            class="check_status"
+            value="IMB IPS"
+          />IMB IPS
+          <i class="fa-solid fa-hospital"></i>
+        </label>
+      </div>
+      <div class="grupo_ch">
+        <label for="check_lb">
+          <input
+            type="radio"
+            name="check"
+            class="check_status"
+            value="RIMED IPS"
+          />RIMED IPS
+          <i class="fa-solid fa-hospital"></i>
+        </label>
+      </div>
+      <div class="grupo_ch">
+        <label for="check_lb">
+          <input
+            type="radio"
+            name="check"
+            class="check_status"
+            value="AAAAAAAAA"
+          />AAAAAAAAA
+          <i class="fa-solid fa-hospital"></i>
+        </label>
+      </div>
+      <div class="grupo_ch">
+        <label for="check_lb">
+          <input
+            type="radio"
+            name="check"
+            class="check_status"
+            value="BBBBBBBBB"
+          />BBBBBBBBB
+          <i class="fa-solid fa-hospital"></i>
+        </label>
+      </div>
+      <div class="grupo_ch">
+        <label for="check_lb">
+          <input
+            type="radio"
+            name="check"
+            class="check_status"
+            value="CC CC"
+          />CC CC
+          <i class="fa-solid fa-hospital"></i>
+        </label>
+      </div>
+      <div class="grupo_ch">
+        <label for="check_lb">
+          <input
+            type="radio"
+            name="check"
+            class="check_status"
+            value="DDD DDD"
+          />DDD DDD
+          <i class="fa-solid fa-hospital"></i>
+        </label>
+      </div>
+      <div class="container_btn">
+        <button type="button" class="btn_next active">
+          Siguiente<i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="modal" id="infoModal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Información de la Cita</h2>
+        <p id="modalInfo"></p>
+      </div>
+    </div>
+
+    <script
+      src="{% static 'citas/dashboard.js' %}?v={{ timestamp }}"
+      defer
+    ></script>
+    <script
+      src="{% static 'citas/aboutCheck.js' %}?v={{ timestamp }}"
+      defer
+    ></script>
+    <script
+      src="{% static 'citas/content.js' %}?v={{ timestamp }}"
+      defer
+    ></script>
+  </body>
+</html>

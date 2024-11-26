@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGENDA TU CITA</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'citas/style.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_title">
+        <h2>AGENDA TU CITA AQUÍ</h2>
+      </div>
+      <form action="" class="login" onsubmit="return false;">
+        <div class="grupo_input">
+          <label for="user">
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              name="user"
+              id="userName"
+              placeholder="Escriba su nombre"
+              required
+            />
+          </label>
+        </div>
+        <div class="grupo_input">
+          <label for="id">
+            <i class="fa-solid fa-key"></i>
+            <input
+              type="text"
+              name="user"
+              id="userId"
+              placeholder="Escriba su id"
+              required
+            />
+          </label>
+        </div>
+        <div class="grupo_btn">
+          <button type="submit" class="btn" id="log">INGRESAR</button>
+        </div>
+      </form>
+    </div>
+    <script src="{% static 'citas/redirection.js' %}"></script>
+  </body>
+</html>
